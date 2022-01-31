@@ -1,0 +1,22 @@
+.nav__humburger {
+    display: block;
+    height: 2px;
+    width: 1rem;
+    background-color: #131313;
+}
+
+.nav__humburger::after {
+    left: 0;
+    top: -8px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.nav__humburger::before {
+    left: 0;
+    top: 8px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

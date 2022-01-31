@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jhaka Naka Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FECC02',
+                        dark: '#131313',
+
+
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue",
+                            "cursive"
+                        ],
+                        monsorrat: ["Montserrat",
+                            "sans-serif"
+                        ],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--///////////////////////////////////header///////////////////////////////////////////////////// -->
+    <header>
+        <nav class="nav h-24 w-4/5 mx-auto flex justify-between items-center sticky top-0">
+            <div class="nav__brand">
+                <h2 class="font-bold font-bebas text-dark uppercase text-4xl">Jhaka Naka Product</h2>
+            </div>
+            <div class="nav__toogle relative block lg:hidden xl:hidden mobile-menu-btn right-0">
+                <div class="nav__humburger h-1 w-6 bg-dark before:bg-dark before:content-[''] before:w-6 before:h-1 before:absolute before:-top-2 before:left-0 after:bg-dark after:content-[''] after:w-4 after:h-1 after:absolute after:top-2 after:left-0"></div>
+            </div>
+            <ul class="nav__items hidden lg:block xl:block mobile-menu absolute right-0 top-24 lg:top-8 xl:top-8">
+                <li class="nav__item lg:inline xl:inline hover:opacity-50">
+                    <a href="#!" class="nav__link font-bebas font-medium text-2xl ml-4 uppercase">About Us</a>
+                </li>
+                <li class="nav__item lg:inline xl:inline hover:opacity-50">
+                    <a href="#!" class="nav__link font-bebas font-medium text-2xl ml-4 uppercase">Our Movies</a>
+                </li>
+                <li class="nav__item lg:inline xl:inline hover:opacity-50">
+                    <a href="#!" class="nav__link font-bebas font-medium text-2xl ml-4 uppercase">services</a>
+                </li>
+            </ul>
+
+        </nav>
+        <section id="banner">
+            <div class="banner__image h-screen bg-[url('./images/banner.jpg')] bg-cover bg-no-repeat flex items-center">
+                <div class="banner__intro text-white font-bebas w-4/5 mx-auto">
+                    <h4 class="banner__intro--subtitle uppercase font-semibold text-xl py-2">Movie Production Studio</h4>
+                    <h1 class="banner__intro-title uppercase flex flex-col text-6xl font-bold">Films MAde to <span class="text-primary">Perfection</span></h1>
+                    <p class="banner__intro--description font-monsorrat py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem expedita eveniet minima quidem at necessitatibus hic dolore esse pariatur harum</p>
+                    <button class="uppercase p-4 border-white border-2 font-normal hover:bg-primary hover:text-dark my-2"><a href="#!">Discover More</a></button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- //////////////////////////////////main/////////////////////////////////////////////////////// -->
+    <main></main>
+    <!-- //////////////////////////////////footer////////////////////////////////////////////////////// -->
+    <footer></footer>
+
+    <script>
+        const btn = document.querySelector('.mobile-menu-btn');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+
+        });
+    </script>
+
+</body>
+
+</html>
